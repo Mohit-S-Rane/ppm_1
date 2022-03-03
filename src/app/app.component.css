@@ -1,0 +1,14 @@
+.example-form-field {
+    width: 200px;
+  }
+
+mat-label {
+    background-color: blue !important;
+    color: antiquewhite;
+    font-weight: 500;
+}
+
+.padding {
+    padding: 10px;
+    
+}

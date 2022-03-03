@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ppm';
+  value = 'Clear me';
+  userName = 'e.g- Mohit';
+  entry = 'Enter Your details'
+  emailId = 'Enter EmailID'
+  password = 'Enter Password'
 }
