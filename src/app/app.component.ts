@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ppm';
-  value = 'Clear me';
-  userName = 'e.g- Mohit';
-  entry = 'Enter Your details'
-  emailId = 'Enter EmailID'
-  password = 'Enter Password'
+  loginForm: FormGroup;
+
+  constructor() {
+    this.loginForm = new FormGroup({
+      email: new FormControl(null, [Validators.required, Validators.email]),
+      password: new FormControl(null, [Validators.required, Validators.maxLength(8), Validators.minLength(4)])
+    })
+  }
+
+  login() {
+    console.log('called');
+    
+  }
 }

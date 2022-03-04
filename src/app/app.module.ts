@@ -9,7 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './modules/login/module/login.module';
@@ -24,15 +24,15 @@ import { MaterialModule } from './modules/login/module/login.module';
     BrowserAnimationsModule,
     FormsModule,
     FlexLayoutModule,
-
-
+    ReactiveFormsModule,
+    MaterialModule
     // MatSliderModule,
     // MatButtonModule,
     // MatButtonToggleModule,
     // MatFormFieldModule,
     // MatInputModule,
     // MatCardModule,
-    MaterialModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
